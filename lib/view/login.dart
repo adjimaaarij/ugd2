@@ -39,11 +39,20 @@ class _LoginViewState extends State<LoginView> {
                   hintTxt: "Username",
                   helperTxt: "Inputkan User yang telah didaftar",
                   iconData: Icons.person),
+              inputForm((p0) {
+                if (p0 == null || p0.isEmpty) {
+                  return "Passsword tidak boleh kosong";
+                }
+                return null;
+              },
+                  controller: passwordController,
+                  hintTxt: "Password",
+                  helperTxt: "Inputkan Password yang telah didaftar",
+                  iconData: Icons.password),
               TextFormField(
                 controller: passwordController,
                 obscureText: !_isPasswordVisible,
                 decoration: InputDecoration(
-                  hintText: "Password",
                   labelText: "Password",
                   helperText: "Inputkan Password",
                   icon: Icon(Icons.password),
