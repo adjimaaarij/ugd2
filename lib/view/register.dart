@@ -83,7 +83,7 @@ class _RegisterViewState extends State<RegisterView> {
                           context: context,
                           initialDate: DateTime.now(),
                           firstDate: DateTime(1950),
-                          lastDate: DateTime(2100));
+                          lastDate: DateTime.now());
 
                       if (pickedDate == null) {
                         final snackBar = SnackBar(
