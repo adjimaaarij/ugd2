@@ -3,7 +3,7 @@
 ## Anggota Kelompok / Kontributor
 - Patrik Restu Kustranggono - 210711333
 - Evan Dominico - 210711341
-- ....
+- Nikken Carmelia - 210711318
 
 ## Deskripsi Project
 
