@@ -123,7 +123,7 @@ class _RegisterViewState extends State<RegisterView> {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => MyHomePage(),
+                        builder: (context) => RegisterView(),
                       ),
                     );
                   } else {
