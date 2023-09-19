@@ -4,6 +4,7 @@
 - Patrik Restu Kustranggono - 210711333
 - Evan Dominico - 210711341
 - Nikken Carmelia - 210711318
+- Adji Ma'aarij - 210711342
 
 ## Deskripsi Project
 
