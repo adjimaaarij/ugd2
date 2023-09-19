@@ -118,36 +118,21 @@ class _RegisterViewState extends State<RegisterView> {
                   helperTxt: "082123456789",
                   iconData: Icons.phone_android),
               ElevatedButton(
-                onPressed: () {
-                  if (notelpController.text == '') {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => RegisterView(),
-                      ),
-                    );
-                  } else {
-                    showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return AlertDialog(
-                          title: Text('Nohp kosong'),
-                          content: Text('Nomor hp tidak boleh kosong.'),
-                          actions: <Widget>[
-                            TextButton(
-                              onPressed: () {
-                                Navigator.of(context).pop();
-                              },
-                              child: Text('OK'),
-                            ),
-                          ],
-                        );
-                      },
-                    );
-                  }
-                },
-                child: Text('Register'),
-              ),
+                  onPressed: () {
+                    if (_formKey.currentState!.validate()) {
+                      Map<String, dynamic> formData = {};
+                      formData['username'] = usernameController.text;
+                      formData['password'] = passwordController.text;
+
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (_) => LoginView(
+                                    data: formData,
+                                  )));
+                    }
+                  },
+                  child: const Text('Register'))
             ],
           ),
         ),
