@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ugd2/view/home.dart';
-import 'package:ugd2/view/register.dart';
-import 'package:ugd2/component/form_componen.dart';
+import 'package:UGD2/View/home.dart';
+import 'package:UGD2/View/register.dart';
+import 'package:UGD2/component/form_component.dart';
 
 class LoginView extends StatefulWidget {
   final Map? data;
