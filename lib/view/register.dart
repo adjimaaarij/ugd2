@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ugd2/view/login.dart';
 import 'package:ugd2/component/form_componen.dart';
 import 'package:intl/intl.dart';
+
 class RegisterView extends StatefulWidget {
   const RegisterView({super.key});
 
@@ -17,7 +18,7 @@ class _RegisterViewState extends State<RegisterView> {
   TextEditingController passwordController = TextEditingController();
   TextEditingController notelpController = TextEditingController();
   TextEditingController dateInput = TextEditingController();
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,9 +69,9 @@ class _RegisterViewState extends State<RegisterView> {
                   iconData: Icons.password,
                   password: true),
               Container(
-                  padding: const EdgeInsets.only(left: 40, top: 20, right: 40),
-                  child: Center(
-                      child: TextField(
+                padding: const EdgeInsets.only(left: 40, top: 20, right: 40),
+                child: Center(
+                  child: TextField(
                     controller: dateInput,
                     decoration: InputDecoration(
                         icon: Icon(Icons.calendar_today),
@@ -98,7 +99,9 @@ class _RegisterViewState extends State<RegisterView> {
                         });
                       }
                     },
-                  ))),
+                  ),
+                ),
+              ),
               inputForm(((p0) {
                 // final RegExp regex = RegExp(r'^\0?[1-9]\d{1,14}$');
                 if (p0 == null || p0.isEmpty) {
@@ -124,11 +127,13 @@ class _RegisterViewState extends State<RegisterView> {
                       formData['password'] = passwordController.text;
                       // Navigator.push(context, MaterialPageRoute(builder: (BuildContext buildContext) => LoginView(data: formData,)));
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (_) => LoginView(
-                                    data: formData,
-                                  )));
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => LoginView(
+                            data: formData,
+                          ),
+                        ),
+                      );
                     }
                   },
                   child: const Text('Register'))
