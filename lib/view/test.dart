@@ -1,37 +1,37 @@
-// import 'package:flutter/material.dart';
+// Widget inputForm(
+//   FormFieldValidator<String> validator, {
+//   required TextEditingController controller,
+//   required String hintTxt,
+//   required String helperTxt,
+//   IconData iconData,
+// }) {
+//   bool _isPasswordVisible = false;
 
-// void main() {
-//   runApp(MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         appBar: AppBar(
-//           title: Text('Kotak dengan Sudut Tidak Siku-siku'),
-//         ),
-//         body: Center(
-//           child: Container(
-//             width: 200,
-//             height: 200,
-//             decoration: BoxDecoration(
-//               color: Colors.blue, // Ganti dengan warna yang Anda inginkan
-//               borderRadius: BorderRadius.circular(
-//                   20), // Atur radius sesuai keinginan Anda
+//   return Column(
+//     crossAxisAlignment: CrossAxisAlignment.start,
+//     children: <Widget>[
+//       TextFormField(
+//         controller: controller,
+//         obscureText: !_isPasswordVisible,
+//         validator: validator,
+//         decoration: InputDecoration(
+//           hintText: hintTxt,
+//           helperText: helperTxt,
+//           icon: Icon(iconData),
+//           suffixIcon: IconButton(
+//             icon: Icon(
+//               _isPasswordVisible ? Icons.visibility : Icons.visibility_off,
 //             ),
-//             child: Center(
-//               child: Text(
-//                 'Ini Kotak dengan Sudut Tidak Siku-siku',
-//                 style: TextStyle(
-//                   color: Colors.white,
-//                 ),
-//               ),
-//             ),
+//             onPressed: () {
+//               _isPasswordVisible = !_isPasswordVisible;
+//               controller.value = controller.value.copyWith(
+//                 text: controller.text, // Maintain existing text
+//                 selection: TextSelection.collapsed(offset: controller.text.length), // Maintain cursor position
+//               );
+//             },
 //           ),
 //         ),
 //       ),
-//     );
-//   }
+//     ],
+//   );
 // }
