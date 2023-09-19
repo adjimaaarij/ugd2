@@ -1,16 +1,17 @@
-# ugd2
+# TUBES PBP - TOPIK 
 
-A new Flutter project.
+## Anggota Kelompok / Kontributor
+- Patrik Restu Kustranggono - 210711333
+- 
+- ....
 
-## Getting Started
+## Deskripsi Project
 
-This project is a starting point for a Flutter application.
+Membuat aplikasi pembelian tiket bioskop
 
-A few resources to get you started if this is your first Flutter project:
+### UGD 2
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Enhance Register Page : alert dialog, Date Picker
+- Enhance Login Page :  eye toggle , toast
+- Enhance Every transaction/action with toast
+- Apply Grid at home page
