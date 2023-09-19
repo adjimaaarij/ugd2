@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:UGD2/View/home.dart';
 import 'package:UGD2/View/register.dart';
 import 'package:UGD2/component/form_component.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class LoginView extends StatefulWidget {
   final Map? data;
@@ -76,6 +77,14 @@ class _LoginViewState extends State<LoginView> {
                         if (dataForm != null &&
                             dataForm['username'] == usernameController.text &&
                             dataForm['password'] == passwordController.text) {
+                          Fluttertoast.showToast(
+                            msg: "Berhasil Login",
+                            toastLength: Toast.LENGTH_SHORT,
+                            gravity: ToastGravity.BOTTOM,
+                            backgroundColor: Colors.blueGrey,
+                            textColor: Colors.white,
+                            timeInSecForIosWeb: 3,
+                            );
                           Navigator.push(
                             context,
                             MaterialPageRoute(
